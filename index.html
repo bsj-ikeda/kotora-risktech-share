@@ -1,27 +1,63 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RiskTech by KOTORA — 資料</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:'Noto Sans JP','Hiragino Sans',sans-serif;background:#FDF7ED;color:#16181D}
-.w{max-width:720px;margin:0 auto;padding:64px 24px}
-.lg{display:flex;align-items:center;gap:9px;margin-bottom:30px}.lg span{font-size:16px;font-weight:900;color:#12347F}
-h1{font-size:30px;font-weight:900;margin:0 0 8px}p.d{font-size:14px;color:#6E727C;margin:0 0 34px;line-height:1.8;font-weight:500}
-a.card{display:flex;align-items:center;gap:18px;background:#fff;border-radius:14px;padding:24px 26px;margin-bottom:14px;
-  text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(20,30,60,.06);transition:box-shadow .15s,transform .15s}
-a.card:hover{box-shadow:0 8px 24px rgba(20,30,60,.12);transform:translateY(-1px)}
-a.card .n{width:46px;height:46px;border-radius:50%;background:#E9EFFD;color:#1B54F2;display:grid;place-items:center;font-weight:900;flex:none}
-a.card h2{margin:0 0 4px;font-size:17px;font-weight:900}a.card p{margin:0;font-size:12.5px;color:#6E727C;font-weight:500}
-.note{margin-top:30px;background:#F3F6FD;border-left:6px solid #1B54F2;border-radius:8px;padding:16px 20px;font-size:12.5px;line-height:1.85;color:#3A3E47;font-weight:500}
-.cf{margin-top:34px;font-size:10.5px;letter-spacing:.14em;font-weight:900;color:#9096A1}
-</style></head><body><div class="w">
-<div class="lg"><svg width="28" height="18" viewBox="0 0 40 26" fill="none"><path d="M2 20C10 20 16 17 22 11L38 2L30 20H2Z" fill="#1B54F2"/><path d="M2 23.5H26" stroke="#1B54F2" stroke-width="2.4" stroke-linecap="round"/></svg><span>bravesoft</span></div>
-<h1>RiskTech by KOTORA</h1>
-<p class="d">UI/UX ご提案の資料一式です。どちらも合言葉でロックしています。</p>
-<a class="card" href="deck.html"><span class="n">01</span><div><h2>ご提案資料（スライド 18枚）</h2><p>課題・ペルソナ・体験の流れ・重要画面・ブランド・TOPファーストビュー3案</p></div></a>
-<a class="card" href="wireframe.html"><span class="n">02</span><div><h2>画面ワイヤー（全50画面・クリッカブル）</h2><p>FigJamの機能要件つき。Ver1/Ver2・未ログイン/ログイン後・SP/PC を切り替えて確認できます</p></div></a>
-<div class="note">スライドは <b>← →</b> で送り、<b>F</b> で全画面、<b>G</b> で目次が開きます。<br>
-ワイヤーは左のメニューから重要画面と操作フローを選べます。画面内のボタンはすべて押せます。</div>
-<div class="cf">CONFIDENTIAL</div>
-</div></body></html>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:'Noto Sans JP','Hiragino Sans',sans-serif;background:#FDF7ED;color:#16181D}
+.wrap{height:100%;display:grid;place-items:center;padding:24px}
+.card{width:100%;max-width:420px;background:#fff;border-radius:16px;padding:40px 36px;
+  box-shadow:0 2px 8px rgba(20,30,60,.06),0 24px 60px rgba(20,30,60,.10);text-align:center}
+.lg{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:26px}
+.lg span{font-size:16px;font-weight:900;color:#12347F}
+h1{font-size:19px;font-weight:900;margin:0 0 6px;color:#16181D}
+p.d{font-size:13px;color:#6E727C;margin:0 0 24px;line-height:1.75;font-weight:500}
+input{width:100%;height:52px;border:2px solid #E2E6F0;border-radius:10px;padding:0 16px;font:inherit;
+  font-size:16px;text-align:center;letter-spacing:.1em;outline:none;transition:border-color .15s}
+input:focus{border-color:#1B54F2}
+button{width:100%;height:52px;margin-top:14px;border:0;border-radius:999px;background:#1B54F2;color:#fff;
+  font:inherit;font-size:15px;font-weight:900;cursor:pointer;transition:background .15s}
+button:hover{background:#1544CC}
+button[disabled]{opacity:.5;cursor:default}
+.err{color:#C2410C;font-size:13px;font-weight:700;margin-top:14px;min-height:20px}
+.cf{margin-top:26px;font-size:10.5px;letter-spacing:.14em;font-weight:900;color:#9096A1}
+</style></head>
+<body><div class="wrap"><div class="card">
+  <div class="lg"><svg width="28" height="18" viewBox="0 0 40 26" fill="none"><path d="M2 20C10 20 16 17 22 11L38 2L30 20H2Z" fill="#1B54F2"/><path d="M2 23.5H26" stroke="#1B54F2" stroke-width="2.4" stroke-linecap="round"/></svg><span>bravesoft</span></div>
+  <h1>RiskTech by KOTORA — 資料</h1>
+  <p class="d">合言葉を入力してください。<br>ご不明な場合は担当までお問い合わせください。</p>
+  <form id="f"><input id="p" type="password" autocomplete="off" placeholder="合言葉" autofocus>
+  <button id="b" type="submit">開く</button></form>
+  <div class="err" id="e"></div>
+  <div class="cf">CONFIDENTIAL</div>
+</div></div>
+<script>
+var D = {"salt":"KpYyvqMFeRq9xHJTvHgBVg==","iv":"B8lMpseHP86zwQbn","ct":"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"};
+var b2u = function(b){ var s=atob(b), u=new Uint8Array(s.length); for(var i=0;i<s.length;i++) u[i]=s.charCodeAt(i); return u; };
+async function open_(pass){
+  var enc = new TextEncoder();
+  var base = await crypto.subtle.importKey("raw", enc.encode(pass), "PBKDF2", false, ["deriveKey"]);
+  var key = await crypto.subtle.deriveKey(
+    {name:"PBKDF2", salt:b2u(D.salt), iterations:150000, hash:"SHA-256"},
+    base, {name:"AES-GCM", length:256}, false, ["decrypt"]);
+  var buf = await crypto.subtle.decrypt({name:"AES-GCM", iv:b2u(D.iv)}, key, b2u(D.ct));
+  var html = new TextDecoder().decode(buf);
+  try { localStorage.setItem("bs_pw", pass); } catch(e) {}
+  try { sessionStorage.setItem("bs_pw", pass); } catch(e) {}
+  document.open(); document.write(html); document.close();
+}
+document.getElementById("f").addEventListener("submit", async function(ev){
+  ev.preventDefault();
+  var b = document.getElementById("b"), e = document.getElementById("e");
+  b.disabled = true; e.textContent = "確認中…";
+  try { await open_(document.getElementById("p").value); }
+  catch(err){ e.textContent = "合言葉が違います"; b.disabled = false; document.getElementById("p").select(); }
+});
+(async function(){
+  var saved = null; try { saved = localStorage.getItem("bs_pw") || sessionStorage.getItem("bs_pw"); } catch(e) {}
+  if(saved){ try { await open_(saved); } catch(e) {} }
+})();
+</script>
+</body></html>
